@@ -34,15 +34,16 @@
   transition: border-color var(--animation);
 }
 
-.clients-icons-link .icon {
+.clients-icons-link {
   fill: var(--icon-clients);
   transition: fill var(--animation);
-}
-.clients-icons-link:hover .icon,
-.clients-icons-link:focus .icon {
-  fill: var(--accent-color);
-}
-.clients-icons-link:hover,
-.clients-icons-link:focus {
-  border-color: var(--accent-color);
+
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }

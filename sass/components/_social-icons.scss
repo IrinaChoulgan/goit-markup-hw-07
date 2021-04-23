@@ -17,20 +17,19 @@
   border-radius: 50%;
   background-color: var(--dark-bg-text-color);
   transition: background-color, var(--animation);
-}
 
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
+    fill: var(--dark-bg-text-color);
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
 .social-icons__icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
-  transition: fill var(--animation);
-}
-
-.social-icons__link:hover .social-icons__icon,
-.social-icons__link:focus .social-icons__icon {
   fill: var(--dark-bg-text-color);
-}
-.social-icons__link:hover,
-.social-icons__link:focus {
-  background-color: var(--accent-color);
+  transition: fill var(--animation);
 }

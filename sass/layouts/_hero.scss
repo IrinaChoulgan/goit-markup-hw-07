@@ -11,12 +11,13 @@
   padding-left: 32px;
   border-width: 0px;
   transition: background-color, var(--animation);
-}
-.button__hero:hover {
-  background: var(--button-background-color);
-}
-.button__hero:focus {
-  @extend %colorLight;
+
+  &:hover {
+    background: var(--button-background-color);
+  }
+  &:focus {
+    @extend %colorLight;
+  }
 }
 
 .hero-section {

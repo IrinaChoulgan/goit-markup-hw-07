@@ -87,10 +87,11 @@
   transition: color var(--animation), background-color var(--animation);
   margin-left: 12px;
   cursor: pointer;
-}
-.subscribe__btn:focus,
-.subscribe__btn:hover {
-  background-color: var(--button-background-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--button-background-color);
+  }
 }
 .subscribe__icon {
   margin-left: 10px;
@@ -98,8 +99,9 @@
 }
 .footer .social-icons__link {
   background: rgba(255, 255, 255, 0.1);
-}
-.footer .social-icons__link:hover,
-.footer .social-icons__link:focus {
-  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

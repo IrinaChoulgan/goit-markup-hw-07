@@ -416,21 +416,20 @@ address {
   transition: background-color, var(--animation);
 }
 
-.social-icons__icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--icon-color);
-  transition: fill var(--animation);
-}
-
 .social-icons__link:hover .social-icons__icon,
 .social-icons__link:focus .social-icons__icon {
   fill: var(--dark-bg-text-color);
 }
 
-.social-icons__link:hover,
-.social-icons__link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   background-color: var(--accent-color);
+}
+
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--dark-bg-text-color);
+  transition: fill var(--animation);
 }
 
 .projects__thumb {
@@ -707,6 +706,10 @@ address {
   background-color: var(--dark-bg-text-color);
 }
 
+.team .social-icons__icon {
+  fill: var(--icon-color);
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -745,7 +748,7 @@ address {
   transition: border-color var(--animation);
 }
 
-.clients-icons-link .icon {
+.clients-icons-link {
   fill: var(--icon-clients);
   transition: fill var(--animation);
 }
@@ -755,8 +758,7 @@ address {
   fill: var(--accent-color);
 }
 
-.clients-icons-link:hover,
-.clients-icons-link:focus {
+.clients-icons-link:hover, .clients-icons-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -857,8 +859,7 @@ address {
   cursor: pointer;
 }
 
-.subscribe__btn:focus,
-.subscribe__btn:hover {
+.subscribe__btn:focus, .subscribe__btn:hover {
   background-color: var(--button-background-color);
 }
 
@@ -871,8 +872,7 @@ address {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer .social-icons__link:hover,
-.footer .social-icons__link:focus {
+.footer .social-icons__link:hover, .footer .social-icons__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -883,11 +883,6 @@ address {
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
-}
-
-.button__portfolio:hover,
-.button__portfolio:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio.section .list {
@@ -915,6 +910,10 @@ address {
   padding-left: 22px;
   background-color: var(--buttom-bg-color);
   transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+}
+
+.button__portfolio:hover, .button__portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter.list {
@@ -953,8 +952,7 @@ address {
   fill: var(--dark-bg-text-color);
 }
 
-.button__hero:focus, .button__portfolio:hover,
-.button__portfolio:focus {
+.button__hero:focus, .button__portfolio:hover, .button__portfolio:focus {
   background-color: var(--accent-color);
   color: var(--dark-bg-text-color);
 }
